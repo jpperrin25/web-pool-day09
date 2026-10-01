@@ -1,13 +1,19 @@
 <?php
 
-function display_page($file)
+function render_body($page)
 {
-    if (file_exists($file))
+    switch ($page)
     {
-       return file_get_contents($file);
-    }
-    else
-    {
-        throw new Exception("Unknown page");
+        case "home":
+            return file_get_contents("home.html");
+
+        case "php":
+            return file_get_contents("php.html");
+
+        case "sql":
+            return file_get_contents("sql.html");
+
+        default:
+            return "<p>Unknown page</p>";
     }
 }
