@@ -1,3 +1,4 @@
+
 <?php
 
 function whoami()
@@ -28,8 +29,7 @@ function whoami()
         }
         else
         {
-            echo "Hi, I have no name and no age.";
+            echo "Hi, I have no name.";
         }
     }
 }
-
