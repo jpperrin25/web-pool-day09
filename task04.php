@@ -13,23 +13,22 @@ function whoami()
     {
         if ($age_valid)
         {
-            echo "Hi, my name is " . $_POST["name"] . " and I'm " . $_POST["age"] . " years old.\n";
+            echo "Hi, my name is " . $_POST["name"] . " and I'm " . $_POST["age"] . " years old.";
         }
         else
         {
-            echo "Hi, my name is " . $_POST["name"] . ".\n";
+            echo "Hi, my name is " . $_POST["name"] . ".";
         }
     }
     else
     {
         if ($age_valid)
         {
-            echo "Hi, I have no name and I'm " . $_POST["age"] . " years old.\n";
+            echo "Hi, I have no name and I'm " . $_POST["age"] . " years old.";
         }
         else
         {
-            echo "Hi, I have no name.\n";
+            echo "Hi, I have no name.";
         }
     }
 }
-
